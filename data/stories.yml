@@ -13,7 +13,7 @@ stories:
   - action: utter_booked
   - action: utter_thanks
 
-- story: direct room book
+- story: direct room book path
   steps:
   - intent: book_room
   - action: utter_num_of_rooms
@@ -21,3 +21,19 @@ stories:
   - intent: room_type
   - action: utter_booked
   - action: utter_thanks
+
+
+- story: clean room path 1
+  steps:
+  - intent: clean_room
+  - action: utter_clean_room
+  - intent: clean_room_now
+  - action: utter_clean_room_now
+
+- story: clean room path 2
+  steps:
+  - intent: clean_room
+  - action: utter_clean_room
+  - intent: clean_room_later
+  - action: utter_clean_room_later
+

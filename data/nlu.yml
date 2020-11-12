@@ -129,3 +129,29 @@ nlu:
     - cancellation policy
     - What is your cancellation policy?
     - show me your cancellation policy!
+
+
+- intent: clean_room
+  examples: |
+    - I want to have my room cleaned
+    - room cleaning
+    - like to clean my room
+    - cleaning?
+    - schedule room cleaning
+
+- intent: clean_room_now
+  examples: |
+    - Could you send someone right now?
+    - right now
+    - send someone right now
+    - now
+    - urgent
+
+- intent: clean_room_later
+  examples: |
+    - Could you send someone after 2 hours?
+    - later
+    - sometime later
+    - after 2 hours
+    - after hours
+  

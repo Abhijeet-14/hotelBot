@@ -11,6 +11,9 @@ intents:
 - book_room
 - room_type
 - nlu_fallback
+- clean_room_now
+- clean_room
+- clean_room_later
 entities:
 - roomType
 responses:
@@ -62,3 +65,14 @@ responses:
   - text: "I'm sorry, I didn't understand. \nCould please rephrase your message?"
   utter_default:
   - text: Sorry I didn't get that. Can you rephrase?
+  utter_clean_room:
+  - buttons:
+    - payload: /clean_room_now
+      title: Now
+    - payload: /clean_room_later
+      title: later
+    text: When should I arrange for a cleaning?
+  utter_clean_room_now:
+  - text: Sure, I will send someone to your room right away.
+  utter_clean_room_later:
+  - text: Sure, I have scheduled a cleaning for 5 pm today.

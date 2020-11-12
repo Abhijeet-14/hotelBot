@@ -50,39 +50,19 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
+- intent: book_room
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - I want to book a room.
+    - room book
+    - room booking
+    - book room.
+    - is there any room avialable
+    - room avialable
 
-- intent: mood_unhappy
+- intent: room_type
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - [Simple]{"entity":"roomType", "value": "simple"}
+    - [Deluxe]{roomType}
 
 - intent: bot_challenge
   examples: |

@@ -9,72 +9,74 @@ stories:
     intent: greet
   - action: utter_greet
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      I want to book a room
+    intent: book_room
+  - action: utter_num_of_rooms
+  - action: utter_room_type
+  - intent: room_type
+  - action: utter_booked
+  - action: utter_thanks
 
-- story: happy path 2
+- story: direct book room
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      book room
+    intent: book_room
+  - action: utter_num_of_rooms
+  - action: utter_room_type
+  - intent: room_type
+  - action: utter_booked
+  - action: utter_thanks
   - user: |
       bye-bye!
     intent: goodbye
   - action: utter_goodbye
 
-- story: sad path 1
+- story: check in
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+      check in
+    intent: faq/chcek_in
+  - action: utter_faq
 
-- story: sad path 2
+- story: check out
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+      check out
+    intent: faq/chcek_out
+  - action: utter_faq
 
-- story: sad path 3
+
+- story: restaurant
   steps:
   - user: |
-      hi
-    intent: greet
-  - action: utter_greet
+      restaurant
+    intent: faq/restaurant
+  - action: utter_faq
+
+
+- story: restaurant timing
+  steps:
   - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      restaurant timing
+    intent: faq/restaurant_time
+  - action: utter_faq
+
+
+- story: breakfast
+  steps:
   - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+      breakfast
+    intent: faq/breakfast
+  - action: utter_faq
+
+- story: breakfast time
+  steps:
+  - user: |
+      breakfast timing
+    intent: faq/breakfast_time
+  - action: utter_faq
+
 
 - story: say goodbye
   steps:

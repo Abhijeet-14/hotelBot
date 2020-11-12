@@ -61,8 +61,9 @@ nlu:
 
 - intent: room_type
   examples: |
-    - [Simple]{"entity":"roomType", "value": "simple"}
-    - [Deluxe]{roomType}
+    - Simple
+    - Deluxe
+
 
 - intent: bot_challenge
   examples: |
@@ -70,3 +71,61 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+
+- intent: faq/check_in
+  examples: |
+    - check in 
+    - check in timing
+    - What are your check in timings?
+    - check-in
+
+- intent: faq/check_out
+  examples: |
+    - check out 
+    - check out timing
+    - What are your check out timings?
+    - check-out
+
+- intent: faq/restaurant
+  examples: |
+    - restaurant?
+    - Does the hotel have a restaurant?
+    - have restaurant?
+    - restaurant avaialble 
+
+- intent: faq/restaurant_time
+  examples: |
+    - what are the timing of your restaurant?
+    - restaurant timeing
+
+
+- intent: faq/breakfast
+  examples: |
+    - breakfast?
+    - Does the hotel offer breakfast?
+    - have breakfast?
+    - breakfast avaialble 
+
+- intent: faq/breakfast_time
+  examples: |
+    - what are the timing of breakfast?
+    - what are the breakfast timings?
+    - breakfast time
+    - breakfast timing
+    - breakfast open at
+    - opeing breakfast
+
+- intent: faq/cancel_reservation
+  examples: |
+    - reservation cancel
+    - cancel reservation
+    - How do I cancel a reservation?
+    - I want to cancel my reservation!
+
+- intent: faq/cancel_policy
+  examples: |
+    - policy cancel
+    - cancellation policy
+    - What is your cancellation policy?
+    - show me your cancellation policy!

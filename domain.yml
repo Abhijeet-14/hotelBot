@@ -10,6 +10,7 @@ intents:
 - faq
 - book_room
 - room_type
+- nlu_fallback
 entities:
 - roomType
 responses:
@@ -57,3 +58,7 @@ responses:
   - text: The booking deposit is refundable if the cancellation occurs at least 15
       days before arrival. For cancellations made after this limit, a penalty will
       be imposed based on the cancellation policy.
+  utter_please_rephrase:
+  - text: "I'm sorry, I didn't understand. \nCould please rephrase your message?"
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?

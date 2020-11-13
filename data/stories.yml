@@ -37,3 +37,13 @@ stories:
   - intent: clean_room_later
   - action: utter_clean_room_later
 
+
+- story: number of rooms
+  steps: 
+  - intent: book_room
+  - action: utter_num_of_rooms
+  - intent: num_of_rooms
+    entities:
+      - numberOfPeople: "5"
+  - action: utter_thanks
+

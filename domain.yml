@@ -14,15 +14,19 @@ intents:
 - clean_room_now
 - clean_room
 - clean_room_later
+- num_of_rooms:
+  use_entities_key:
+    - numberOfPeople
+
 entities:
-- roomType
+- numberOfPeople
 responses:
   utter_greet:
   - text: "Welcome to Hotel [XYZ](https://rasa.com). \nHow can I help you?"
   utter_thanks:
   - text: Thank you!
   utter_goodbye:
-  - text: Bye
+  - text: Thank you so much for using our service! Visit again
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_num_of_rooms:

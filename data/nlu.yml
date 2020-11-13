@@ -64,13 +64,13 @@ nlu:
     - Simple
     - Deluxe
 
-- intent: num_of_rooms
-  examples: |
-    - [3]{"entity": "numberOfPeople", "value": "3"} 
-    - [5]{"entity": "numberOfPeople", "value": "5"} 
-    - [2]{"entity": "numberOfPeople", "value": "2"} rooms
-    - [nine]{"entity": "numberOfPeople", "value": "9"} rooms
-    - [eight]{"entity": "numberOfPeople", "value": "8"}  
+# - intent: num_of_rooms
+#   examples: |
+#     - [3]{"entity": "numberOfPeople", "value": "3"} 
+#     - [5]{"entity": "numberOfPeople", "value": "5"} 
+#     - [2]{"entity": "numberOfPeople", "value": "2"} rooms
+#     - [nine]{"entity": "numberOfPeople", "value": "9"} rooms
+#     - [eight]{"entity": "numberOfPeople", "value": "8"}  
 
 - intent: bot_challenge
   examples: |

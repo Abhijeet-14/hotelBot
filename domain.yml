@@ -14,9 +14,9 @@ intents:
 - clean_room_now
 - clean_room
 - clean_room_later
-- num_of_rooms:
-  use_entities_key:
-    - numberOfPeople
+# - num_of_rooms:
+#   use_entities_key:
+#     - numberOfPeople
 
 entities:
 - numberOfPeople
